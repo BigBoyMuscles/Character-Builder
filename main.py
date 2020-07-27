@@ -3,6 +3,8 @@ import pickle
 import random
 from os import path, remove
 
+import pygame
+
 import funcs
 from barbarian import *
 from bard import *
@@ -176,7 +178,7 @@ else:
 if(player.exp >= 300):
     while(player.exp >= 300):
         player.levelUP()
-        player.exp = player.exp - 300
+        player.exp -= 300
 
 # Saves current character#######################################################
 savecharacter = input('Do you want to save this character? ')
